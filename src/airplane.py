@@ -20,8 +20,7 @@ class Airplane:
     def passengers(self):
         return self.__passengers
 
-    def get_capacity_left(self):
-        return self.__capacity - len(self.__passengers)
+
 
     @name.setter
     def name(self, value):
@@ -29,6 +28,8 @@ class Airplane:
             raise ValueError("Name cannot be an empty string.")
         self.__name = value
 
+    def get_capacity_left(self):
+        return self.__capacity - len(self.__passengers)
 
     def add_passenger(self, passen:Passenger,):
         if self.get_capacity_left() == 0:

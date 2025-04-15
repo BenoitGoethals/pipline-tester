@@ -42,6 +42,15 @@ class Passenger:
 
 
 
+    def __str__(self):
+        return f"{self.name} of age {self.age} is a {self.gender}."
+
+    def __repr__(self):
+        return f"Passenger({self.name}, {self.age}, {self.gender})"
+
+
+
+
 
 
 
